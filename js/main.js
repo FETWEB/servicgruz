@@ -5,7 +5,13 @@
  });
 
 jQuery(document).ready(function($) {
-
+	var adv_modal = $('.adv-modal-overlay, .adv-modal');
+	$('#make-order').on('click',function(){
+		adv_modal.addClass('active');
+	});
+	$('.adv-close-modal').click(function(){
+		$('.adv-modal-overlay, .adv-modal').removeClass('active');
+	});
 	"use strict";
 
 	

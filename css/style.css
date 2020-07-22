@@ -304,6 +304,7 @@ h1, h2, h3, h4, h5,
       padding: 10px 10px; }
       .site-navbar .site-navigation .site-menu > li > a {
         padding: 10px 0px;
+        font-weight: bolder;
         color: #fff;
         text-decoration: none !important; }
         .site-navbar .site-navigation .site-menu > li > a:hover {
@@ -1165,25 +1166,39 @@ h1, h2, h3, h4, h5,
   .unit-1 .unit-1-text {
     z-index: 2;
     position: absolute;
-    bottom: -90px;
+    top: 90%;
     color: #fff;
     display: block;
-    width: 100%; }
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0, 0.4);
+  }
+  .unit-1 .unit-1-text .flex-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90%;
+  }
     .unit-1 .unit-1-text .unit-1-heading {
       font-size: 1.5rem;
-      position: relative; }
+      position: relative; 
+      padding: 5px;
+      color: #f89d13;
+      font-weight: bold;
+      text-shadow: 0px 0px 3px black;
+    }
   .unit-1 p {
     opacity: 0;
     visibility: hidden;
     -webkit-transition: .3s all ease;
     -o-transition: .3s all ease;
     transition: .3s all ease;
-    color: rgba(255, 255, 255, 0.5); }
+    color: rgba(255, 255, 255); }
   .unit-1:hover p {
     opacity: 1;
     visibility: visible; }
   .unit-1:hover .unit-1-text {
-    bottom: 30px; }
+    top: 0%; }
   .unit-1:hover img {
     -webkit-transform: scale(1.05);
     -ms-transform: scale(1.05);
@@ -1385,3 +1400,145 @@ h1, h2, h3, h4, h5,
 .custom-pagination span {
   background: #e6e6e6;
   color: #000; }
+.logo .logo-img{
+  width: 130px
+}
+header.site-navbar{
+  padding-top: 0px!important;
+}
+.unit-1-text p, .unit-1-text li{
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+}
+
+/*Modal*/
+#form_order input {
+  width: 100%;
+}
+
+.adv-modal-content img {
+  width: 100%;
+  height: auto;
+}
+
+.adv-modal-overlay {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 11111;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+  transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+}
+
+.adv-modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.adv-modal {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  position: relative;
+  margin: 0 auto;
+  background-color: #fff;
+  width: 70vw;
+  max-width: 600px;
+  padding: 1rem;
+  border-radius: 3px;
+  opacity: 0;
+  overflow-y: auto;
+  visibility: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition: all 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+  transition: all 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+}
+
+.adv-modal .adv-close-modal {
+  position: absolute;
+  cursor: pointer;
+  top: 5px;
+  right: 15px;
+  opacity: 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+  transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+  transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+  transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), transform 0.6s cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+
+.adv-modal .adv-close-modal svg {
+  width: 1.75em;
+  height: 1.75em;
+}
+
+.adv-modal .adv-modal-content {
+  opacity: 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+  transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+
+.adv-modal.active {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.adv-modal.active .adv-modal-content {
+  opacity: 1;
+}
+
+.adv-modal.active .adv-close-modal {
+  -webkit-transform: translateY(10px);
+  transform: translateY(10px);
+  opacity: 1;
+}
+.adv-modal .adv-modal-content > form{
+  padding-top: 0px!important;
+}
+.adv-modal .adv-modal-content h5{
+  font-size: 35px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+/**
+ * Mobile styling
+ */
+@media only screen and (max-width: 39.9375em) {
+  .adv-modal {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+}
