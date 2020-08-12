@@ -304,7 +304,8 @@ h1, h2, h3, h4, h5,
       padding: 10px 10px; }
       .site-navbar .site-navigation .site-menu > li > a {
         padding: 10px 0px;
-        font-weight: bolder;
+        font-weight: 600;
+        
         color: #fff;
         text-decoration: none !important; }
         .site-navbar .site-navigation .site-menu > li > a:hover {
@@ -1210,7 +1211,7 @@ h1, h2, h3, h4, h5,
   z-index: 9; }
 
 .unit-4 .unit-4-icon span {
-  line-height: 0;
+  
   font-size: 3rem; }
 
 .unit-4 h3 {
@@ -1541,4 +1542,15 @@ header.site-navbar{
     width: 100%;
     max-width: 100%;
   }
+}
+.flex-text p{
+  line-height: 15px;
+}
+.unit-4-icon span::before{
+  font-size: 60px;
+}
+#why h3{
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
 }

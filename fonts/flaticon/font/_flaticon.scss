@@ -1,6 +1,6 @@
     /*
     Flaticon icon font: Flaticon
-    Creation date: 24/01/2019 09:02
+    Creation date: 12/08/2020 19:34
     */
 
     @font-face {
@@ -37,16 +37,22 @@
   font-smoothing: antialiased;
     }
 
-    .flaticon-frontal-truck:before { content: "\f100"; }
-.flaticon-sea-ship-with-containers:before { content: "\f101"; }
-.flaticon-car:before { content: "\f102"; }
-.flaticon-platform:before { content: "\f103"; }
-.flaticon-travel:before { content: "\f104"; }
-.flaticon-barn:before { content: "\f105"; }
+    .flaticon-contract:before { content: "\f100"; }
+.flaticon-skills:before { content: "\f101"; }
+.flaticon-tools:before { content: "\f102"; }
+.flaticon-bill:before { content: "\f103"; }
+.flaticon-fast-delivery:before { content: "\f104"; }
+.flaticon-express-delivery:before { content: "\f105"; }
+.flaticon-licensing:before { content: "\f106"; }
+.flaticon-id-card:before { content: "\f107"; }
+.flaticon-credit-card:before { content: "\f108"; }
     
-    $font-Flaticon-frontal-truck: "\f100";
-    $font-Flaticon-sea-ship-with-containers: "\f101";
-    $font-Flaticon-car: "\f102";
-    $font-Flaticon-platform: "\f103";
-    $font-Flaticon-travel: "\f104";
-    $font-Flaticon-barn: "\f105";
+    $font-Flaticon-contract: "\f100";
+    $font-Flaticon-skills: "\f101";
+    $font-Flaticon-tools: "\f102";
+    $font-Flaticon-bill: "\f103";
+    $font-Flaticon-fast-delivery: "\f104";
+    $font-Flaticon-express-delivery: "\f105";
+    $font-Flaticon-licensing: "\f106";
+    $font-Flaticon-id-card: "\f107";
+    $font-Flaticon-credit-card: "\f108";
